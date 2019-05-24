@@ -16,7 +16,7 @@ public:
 		imz = 0.0;
 	}
 
-	~complex()// побитовое логическое отрицание
+	~complex()// ГЇГ®ГЎГЁГІГ®ГўГ®ГҐ Г«Г®ГЈГЁГ·ГҐГ±ГЄГ®ГҐ Г®ГІГ°ГЁГ¶Г Г­ГЁГҐ
 	{
 	}
 
@@ -29,7 +29,7 @@ public:
 	complex(const complex& object) :
 		rez(object.rez), imz(object.imz), mod(object.mod), arg(object.arg)
 	{
-		cout << "Конструктор копирования." << endl;
+		cout << "ГЉГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГї." << endl;
 	}
 
 	void modulecomplex()
@@ -99,17 +99,17 @@ public:
 	}
 
 	friend ostream& operator<<(ostream & out, complex & comp) {
-		out << "Модуль комплексного числа:" << comp.mod << endl;
-		out << "Аргумент комплексного числа:" << comp.arg << endl;
+		out << "ГЊГ®Г¤ГіГ«Гј ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г®ГЈГ® Г·ГЁГ±Г«Г :" << comp.mod << endl;
+		out << "ГЂГ°ГЈГіГ¬ГҐГ­ГІ ГЄГ®Г¬ГЇГ«ГҐГЄГ±Г­Г®ГЈГ® Г·ГЁГ±Г«Г :" << comp.arg << endl;
 		return out;
 	}
 
 	friend istream& operator>>(istream & in, complex & comp) {
-		cout << "Введите номер действительной части:";
+		cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г­Г®Г¬ГҐГ° Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г®Г© Г·Г Г±ГІГЁ:";
 		cin >> comp.rez;
-		cout << "Введите номер мнимой части:";
+		cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г­Г®Г¬ГҐГ° Г¬Г­ГЁГ¬Г®Г© Г·Г Г±ГІГЁ:";
 		cin >> comp.imz;
 		return in;
 	}
 };
-#endif#pragma once
+#endif
