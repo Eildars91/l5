@@ -36,7 +36,7 @@ public:
 	vector(const vector& object) :
 		v1x(object.v1x), v1y(object.v1y), v2x(object.v2x), v2y(object.v2y), mod(object.mod), opera(object.opera), vx(object.vx), vy(object.vy)
 	{
-		cout << "Êîíñòðóêòîð êîïèðîâàíèÿ." << endl;
+		cout << "ÃŠÃ®Ã­Ã±Ã²Ã°Ã³ÃªÃ²Ã®Ã° ÃªÃ®Ã¯Ã¨Ã°Ã®Ã¢Ã Ã­Ã¨Ã¿." << endl;
 	}
 
 	~vector()
@@ -56,12 +56,12 @@ public:
 		case 1:
 			vx = v1x + v2x;
 			vy = v1y + v2y;
-			cout << "Ñóììà (" << vx << "," << vy << ")" << endl;
+			cout << "Ã‘Ã³Ã¬Ã¬Ã  (" << vx << "," << vy << ")" << endl;
 			break;
 		case 2:
 			vx = v1x - v2x;
 			vy = v1y - v2y;
-			cout << "Âû÷èòàíèå (" << vx << "," << vy << ")" << endl;
+			cout << "Ã‚Ã»Ã·Ã¨Ã²Ã Ã­Ã¨Ã¥ (" << vx << "," << vy << ")" << endl;
 			break;
 		}
 	}
@@ -95,30 +95,30 @@ public:
 	}
 
 	friend ostream& operator<<(ostream & out, vector & vec) {
-		out << "Ìîäóëü:" << vec.mod << endl;
-		out << "Ïåðâûé âåêòîð: " << vec.v1x << "," << vec.v1y << ";" << endl;
-		out << "Âòîðîé âåêòîð: " << vec.v2x << "," << vec.v2y << ";" << endl;
+		out << "ÃŒÃ®Ã¤Ã³Ã«Ã¼:" << vec.mod << endl;
+		out << "ÃÃ¥Ã°Ã¢Ã»Ã© Ã¢Ã¥ÃªÃ²Ã®Ã°: " << vec.v1x << "," << vec.v1y << ";" << endl;
+		out << "Ã‚Ã²Ã®Ã°Ã®Ã© Ã¢Ã¥ÃªÃ²Ã®Ã°: " << vec.v2x << "," << vec.v2y << ";" << endl;
 		return out;
 	}
 
 	friend istream& operator>>(istream & in, vector & vec) {
-		cout << "Ââåäèòå êîîðäèíàòû ïåðâîãî âåêòîðà:" << endl;
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã» Ã¯Ã¥Ã°Ã¢Ã®Ã£Ã® Ã¢Ã¥ÃªÃ²Ã®Ã°Ã :" << endl;
 		cout << "x = ";
 		in >> vec.v1x;
 		cout << "y = ";
 		in >> vec.v1y;
-		cout << "Ââåäèòå êîîðäèíàòû âòîðîãî âåêòîðà:" << endl;
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã» Ã¢Ã²Ã®Ã°Ã®Ã£Ã® Ã¢Ã¥ÃªÃ²Ã®Ã°Ã :" << endl;
 		cout << "x = ";
 		in >> vec.v2x;
 		cout << "y = ";
 		in >> vec.v2y;
-		cout << "Îïåðàöèÿ, êîòîðóþ âû õîòèòå ñäåëàòü:" << endl;
-		cout << "1. Íàéòè ñóììó." << endl;
-		cout << "2. Íàéòè âû÷èòàíèå." << endl;
-		cout << "Îïåðàöèÿ: ";
+		cout << "ÃŽÃ¯Ã¥Ã°Ã Ã¶Ã¨Ã¿, ÃªÃ®Ã²Ã®Ã°Ã³Ã¾ Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã±Ã¤Ã¥Ã«Ã Ã²Ã¼:" << endl;
+		cout << "1. ÃÃ Ã©Ã²Ã¨ Ã±Ã³Ã¬Ã¬Ã³." << endl;
+		cout << "2. ÃÃ Ã©Ã²Ã¨ Ã¢Ã»Ã·Ã¨Ã²Ã Ã­Ã¨Ã¥." << endl;
+		cout << "ÃŽÃ¯Ã¥Ã°Ã Ã¶Ã¨Ã¿: ";
 		in >> vec.opera;
 		return in;
 	}
 };
 
-#endif#pragma once
+#endif
